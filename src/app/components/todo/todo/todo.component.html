@@ -13,9 +13,10 @@
             <td>{{ todo.title }}</td>
             <td>{{ todo.completed }}</td>
             <td>
-                <span class="badge badge-info p-2">Edit</span>&nbsp;
+                <span class="badge badge-info p-2" (click)="editTodo(todo)">Edit</span>&nbsp;
                 <span class="badge badge-danger p-2">Delete</span>
             </td>
        </tr>
     </tbody>
 </table>
+<app-edit-todo-modal></app-edit-todo-modal>
